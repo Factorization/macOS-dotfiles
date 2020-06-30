@@ -1,0 +1,164 @@
+##########################
+#        Brew Taps       #
+##########################
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-fonts'
+tap 'buo/cask-upgrade'
+# tap 'Schniz/tap'
+# tap 'mongodb/brew'
+# tap 'web3j/web3j'
+# tap 'ethereum/ethereum'
+
+
+##########################
+#        Cask Apps       #
+##########################
+# cask 'adobe-acrobat-reader'       # Adobe reader
+# cask 'adobe-air'                  # Adobe AIR
+# cask 'adoptopenjdk'               # openJDK for macOS
+# cask 'alfred'                     # macOS hotkey and search tool. Maybe add later
+# cask 'bartender'                  # macOS manage menu bar tool. Maybe add later
+# cask 'caret'                      # Markdown editor
+# cask 'daisydisk'                  # Disk usage
+# cask 'dashlane'                   # Password manager
+# cask 'discord'                    # Chat
+cask 'docker'                       # docker for macOS
+# cask 'electron-cash'              # Bitcoin wallet
+cask 'firefox'                      # Firefox browser
+cask 'font-hack-nerd-font'          # Fonts for terminal
+# cask 'gns3'                       # Lab network tool
+# cask 'godot'                      # Game engine
+# cask 'google-backup-and-sync'     # Google Drive
+cask 'google-chrome'                # Chrome browser
+cask 'gpg-suite'                    # Tool to encrypt email
+# cask 'hammerspoon'                # macOS Scripting engine for Lua scripts
+# cask 'imageoptim'                 # Image re-sizer
+# cask 'intellij-idea'              # JetBrains IDE
+cask 'iterm2'                       # macOS terminal
+# cask 'java'                       # Java for macOS. Maybe add later
+cask 'jetbrains-toolbox'            # JetBrains toolbox app for installing JetBrain IDEs
+# cask 'karabiner-elements'         # Keyboard customize for macOS.
+# cask 'keepassx'                   # macOS KeePass tool. Using strongbox instead
+cask 'keybase'                      # Tool for encrypted messaging and file sharing
+# cask 'kitematic'                  # Docker GUI tool
+cask 'little-snitch'                # macOS firewall tool.
+# cask 'love'                       # Lua game framework
+cask 'microsoft-edge'               # Microsoft Edge browser
+# cask 'microsoft-office'           # Office for macOS
+# cask 'mongodb-compass'            # MongoDB GUI
+# cask 'mysqlworkbench'             # MySQL GUI
+# cask 'nordvpn'                    # VPN
+# cask 'paintbrush'                 # Paint for macOS
+# cask 'parallels'                  # Parallels VMs
+# cask 'parallels-toolbox'          # Parallels other apps
+# cask 'parallels-virtualization-sdk'   # Parallels SDK needed for vagrant
+# cask 'pgadmin4'                   # PostgreSQL GUI
+cask 'powershell'                   # PowerShell for macOS
+cask 'postman'                      # API tester
+# cask 'slack'                      # Slack chat client
+# cask 'sourcetree'                 # Git GUI client
+cask 'spectacle'                    # macOS move and resize windows
+# cask 'spotify'                    # Spotify thick client
+# cask 'steam'                      # Steam game client
+cask 'suspicious-package'           # macOS package inspector tool
+cask 'teamviewer'                   # TeamViewer client
+# cask 'telegram'                   # Telegram chat client
+# cask 'the-unarchiver'             # The Unarchiver for RAR file
+# cask 'transmission'               # BitTorrent Client
+# cask 'unity'                      # Graphics design
+cask 'vagrant'                      # HashiCorp dev environment manager
+cask 'vagrant-manager'              # Vagrant VM manager
+# caks 'virtualbox'                 # Oracle VirtualBox
+cask 'visual-studio-code'           # VS Code IDE
+cask 'vlc'                          # VLC media player
+# cask 'webstorm'                   # JetBrains IDE
+# cask 'whatsapp'                   # Chat app
+# cask 'xquartz'                    # X windows for macOS
+# cask 'zoomus'                     # Zoom chat client
+
+
+##########################
+#        Brew Apps       #
+##########################
+brew 'ack'                          # Grep-like tool
+brew 'awscli'                       # AWS command line
+brew 'azure-cli'                    # Azure command line
+brew 'brew-cask-completion'         # Fish completion for brew cask 
+brew 'coreutils'                    # GNU File, Shell, and Text utilities
+brew 'curl'                         # URL tool to query HTTP/HTTPS sites and APIs
+brew 'dep'                          # Go dependency manager
+brew 'findutils'                    # GNU find, xargs and locate apps
+brew 'fish'                         # Fish shell
+brew 'gist'                         # GitHub gist tools
+brew 'git'                          # Git version control tool
+brew 'git-open'                     # Open GitHub webpages from a terminal
+brew 'glib'                         # Application library for C
+brew 'go'                           # Golang
+brew 'goenv'                        # Golang version manager
+brew 'googler'                      # Google search from CLI
+brew 'gpg'                          # PGP encrypt and sign
+brew 'grc'                          # Colorize log files and command output
+brew 'htop'                         # HTOP tool for macOS
+brew 'httpie'                       # python curl replacement
+brew 'hub'                          # GitHub support to Git
+brew 'jq'                           # JSON query tool
+brew 'lastpass-cli'                 # LastPass password manager CLI tool
+brew 'mas'                          # Mac App Store command-line tool
+brew 'minikube'                     # Run a kubernetes cluster locally
+brew 'nmap'                         # NMAP command line tool
+brew 'node'                         # Nodejs
+brew 'nvm'                          # Manage multiple Node.js versions
+brew 'openssl'                      # OpenSSL
+brew 'packer'                       # Creates system images
+brew 'pandoc'                       # Universal document converter
+brew 'pyenv'                        # Python version manager
+brew 'python'                       # Python 3.7
+brew 'python3.8'                    # Python 3.8
+brew 'rbenv'                        # Ruby version manager
+brew 'ruby'                         # Ruby
+brew 'sqlite'                       # CLI for SQLite
+brew 'ssh-copy-id'                  # Add public key to remote ssh endpoints
+brew 'terminal-notifier'            # Sends user notifications from the terminal
+brew 'terraform'                    # Infrastructure as code tool
+brew 'tmux'                         # Terminal multiplexer
+brew 'tree'                         # Show directory structure
+brew 'watch'                        # Watch command line tool
+brew 'wget'                         # Retrieve files from the Internet
+brew 'youtube-dl'                   # Download YouTube videos
+
+
+##########################
+#         Mac Apps       #
+##########################
+mas 'Amphetamine', id: 937984704
+mas 'FruitJuice', id: 671736912
+mas 'Keynote', id: 409183694
+mas 'Microsoft Excel', id: 462058435
+mas 'Microsoft OneNote', id: 784801555
+mas 'Microsoft Outlook', id: 985367838
+mas 'Microsoft PowerPoint', id: 462062816
+mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'Microsoft Word', id: 462054704
+mas 'Numbers', id: 409203825
+mas 'OneDrive', id: 823766827
+mas 'Pages', id: 409201541
+mas 'Skitch', id: 425955336
+mas 'Slack', id: 803453959
+mas 'Strongbox', id: 1270075435
+mas 'Trello', id: 1278508951
+mas 'WiFi Explorer Lite', id: 1408727408
+mas 'Xcode', id: 497799835
+
+# Python utilities.
+pip3 install pipx
+pipx install black
+
+pipx install glances
+pipx install legit
+pipx install pipenv
+
+pipx install pylint
+
+npm install dockerfile_lint
+npm install --global speed-test
+
