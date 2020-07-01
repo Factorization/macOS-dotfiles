@@ -1,5 +1,5 @@
 
-source ./my_functions.fish
+source ~/.config/fish/my_functions.fish
 
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
