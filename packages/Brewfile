@@ -107,7 +107,7 @@ brew 'mas'                          # Mac App Store command-line tool
 brew 'minikube'                     # Run a kubernetes cluster locally
 brew 'nmap'                         # NMAP command line tool
 brew 'node'                         # Nodejs
-brew 'nvm'                          # Manage multiple Node.js versions
+# brew 'nvm'                          # Manage multiple Node.js versions
 brew 'openssl'                      # OpenSSL
 brew 'packer'                       # Creates system images
 brew 'pandoc'                       # Universal document converter

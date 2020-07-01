@@ -33,8 +33,8 @@ if status --is-login
     set -gx PATH $GOROOT/bin $PATH
 
     # Setup NVM
-    set -gx NVM_DIR "$HOME/.nvm"
-    nvm use node > /dev/null 2>&1
+    # set -gx NVM_DIR "$HOME/.nvm"
+    # nvm use node > /dev/null 2>&1
 
     # Homebrew paths
     set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
