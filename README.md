@@ -24,4 +24,6 @@ My dotfiles for macOS
     git clone git@github.com:Factorization/macOS-dotfiles.git
     ```
 
-1. Run the bootstrap.sh script
+1. Ensure you are signed in to the App Store
+
+1. Run the `bootstrap.sh` script
