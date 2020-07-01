@@ -148,17 +148,3 @@ mas 'Strongbox', id: 1270075435
 mas 'Trello', id: 1278508951
 mas 'WiFi Explorer Lite', id: 1408727408
 mas 'Xcode', id: 497799835
-
-# Python utilities.
-pip3 install pipx
-pipx install black
-
-pipx install glances
-pipx install legit
-pipx install pipenv
-
-pipx install pylint
-
-npm install dockerfile_lint
-npm install --global speed-test
-
