@@ -94,7 +94,7 @@ brew 'git'                          # Git version control tool
 brew 'git-open'                     # Open GitHub webpages from a terminal
 brew 'glib'                         # Application library for C
 brew 'go'                           # Golang
-brew 'goenv'                        # Golang version manager
+brew 'goenv --head'                        # Golang version manager
 brew 'googler'                      # Google search from CLI
 # brew 'gpg'                        # PGP encrypt and sign
 brew 'grc'                          # Colorize log files and command output
