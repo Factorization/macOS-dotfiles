@@ -5,6 +5,10 @@ My dotfiles for macOS
 ## Usage
 
 1. Generate new SSH keys and add them to GitHub account
+    ```bash
+    ssh-keygen
+    cat ~/.ssh/id_rsa.pub | pbcopy
+    ```
 1. Install Homebrew and git
 
     ```bash
