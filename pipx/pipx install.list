@@ -1,0 +1,4 @@
+black
+glances
+pipenv
+pylint
