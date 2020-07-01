@@ -1,0 +1,30 @@
+{
+    "editor.rulers": [79],
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "python.linting.enabled": true,
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "cSpell.ignoreWords": [
+        "a",
+        "lmaqe",
+        "wr"
+    ],
+    "cSpell.userWords": [
+        "gmail",
+        "journalbeat",
+        "kraemer"
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.enableFiletypes": [
+        "ruby",
+        "shellscript"
+    ],
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 100,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish"
+}
