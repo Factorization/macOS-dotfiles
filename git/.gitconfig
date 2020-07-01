@@ -1,0 +1,7 @@
+[user]
+	name = Jeffrey Kraemer
+	email = jeffreykraemer@factorization.net
+[core]
+	autocrlf = input
+    excludesfile = ~/.gitignore_global
+    editor = "code --wait"
