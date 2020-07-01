@@ -96,7 +96,7 @@ brew 'glib'                         # Application library for C
 brew 'go'                           # Golang
 brew 'goenv'                        # Golang version manager
 brew 'googler'                      # Google search from CLI
-brew 'gpg'                          # PGP encrypt and sign
+# brew 'gpg'                        # PGP encrypt and sign
 brew 'grc'                          # Colorize log files and command output
 brew 'htop'                         # HTOP tool for macOS
 brew 'httpie'                       # python curl replacement
@@ -113,7 +113,7 @@ brew 'packer'                       # Creates system images
 brew 'pandoc'                       # Universal document converter
 brew 'pyenv'                        # Python version manager
 brew 'python'                       # Python 3.7
-brew 'python3.8'                    # Python 3.8
+brew 'python@3.8'                   # Python 3.8
 brew 'rbenv'                        # Ruby version manager
 brew 'ruby'                         # Ruby
 brew 'sqlite'                       # CLI for SQLite
