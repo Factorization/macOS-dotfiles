@@ -6,7 +6,7 @@ cd "$DIR"
 . scripts/functions.sh
 
 # Update fish shell plugins
-info "Updating fisher (fish plugin manager)..."
+info "Updating fisher (fish package manager)..."
 fish -c fisher
 success "Finished updating fisher."
 
