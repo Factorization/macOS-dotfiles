@@ -29,4 +29,6 @@ find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
     ./$setup
 done
 
+./update_all.sh
+
 success "Finished installing Dotfiles"

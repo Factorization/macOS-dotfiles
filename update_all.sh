@@ -26,4 +26,4 @@ success "Finished updating brew apps."
 ./python_update.sh
 
 # Ruby Gems
-./gem/setup.sh
+./ruby/setup.sh
