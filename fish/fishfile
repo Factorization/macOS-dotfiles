@@ -11,7 +11,6 @@ oh-my-fish/plugin-ssh
 oh-my-fish/plugin-brew
 oh-my-fish/plugin-bundler
 oh-my-fish/plugin-osx
-
 oh-my-fish/plugin-cd
 barnybug/docker-fish-completion
 oh-my-fish/plugin-grc
