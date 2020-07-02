@@ -27,4 +27,4 @@ My dotfiles for macOS
 
 1. Ensure you are signed in to the App Store
 
-1. Run the `bootstrap.sh` script
+1. Run the `~/Projects/dotfiles/bootstrap.sh` script.
