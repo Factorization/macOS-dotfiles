@@ -42,8 +42,11 @@ if status --is-login
     # set -gx NVM_DIR "$HOME/.nvm"
     # nvm use node > /dev/null 2>&1
 
-    # Homebrew paths
+    # Homebrew path
     set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+    # Pipx path
+    set -gx PATH $HOME/.local/bin $PATH
 
     # VirtaulFish plugins
     set -gx VIRTUALFISH_PLUGINS "auto_activation compat_aliases"
