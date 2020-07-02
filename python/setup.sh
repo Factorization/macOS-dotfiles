@@ -41,7 +41,7 @@ if pyenv which pipx &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
     success "Finished re-installing PIPX packages."
 fi
 
-if fish -c "pipx list | grep poetry &>/dev/null"; then
+if fish -c "pipx list | grep --quiet poetry"; then
     info "Adding Poetry tab completion..."
     fish -c "poetry completions fish > ~/.config/fish/completions/poetry.fish"
     success "Finished adding Poetry tab completion."
