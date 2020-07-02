@@ -21,7 +21,8 @@ My dotfiles for macOS
 1. Clone this repository
 
     ```bash
-    git clone git@github.com:Factorization/macOS-dotfiles.git
+    mkdir -p ~/Projects
+    git clone git@github.com:Factorization/macOS-dotfiles.git ~/Projects/dotfiles
     ```
 
 1. Ensure you are signed in to the App Store
