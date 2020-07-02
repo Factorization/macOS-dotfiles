@@ -26,5 +26,10 @@
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish"
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "python.linting.mypyPath": "~/.local/bin/mypy",
+    "python.linting.flake8Path": "~/.local/bin/flake8",
+    "python.linting.pylintPath": "~/.local/bin/pylint",
+    "python.formatting.blackPath": "~/.local/bin/black",
+    "editor.formatOnSave": true
 }
