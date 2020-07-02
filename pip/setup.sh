@@ -7,6 +7,12 @@ cd "$DIR"
 
 COMMENT=\#*
 
+PIPX_REINSTALL_COMPLETE=false
+if [ -x "$(command -v pipx)" ]; then
+    pipx reinstall-all
+    PIPX_REINSTALL_COMPLETE=true
+fi
+
 find * -name "*.list" -not -wholename "*global*" | while read fn; do
     cmd="${fn%.*}"
     set -- $cmd
@@ -18,3 +24,7 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     done < "$fn"
     success "Finished installing $1 packages."
 done
+
+if [ -x "$(command -v pipx)" ] && [ "$PIPX_REINSTALL_COMPLETE" = true ]; then
+    pipx reinstall-all
+fi
