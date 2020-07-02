@@ -48,8 +48,8 @@ if status --is-login
     # Pipx path
     set -gx PATH $HOME/.local/bin $PATH
 
-    # VirtaulFish plugins
-    set -gx VIRTUALFISH_PLUGINS "auto_activation compat_aliases"
+    # # VirtaulFish plugins
+    # set -gx VIRTUALFISH_PLUGINS "auto_activation compat_aliases"
 
 end
 
