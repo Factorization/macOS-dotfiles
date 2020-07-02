@@ -11,7 +11,7 @@ PIPX_REINSTALL_COMPLETE=false
 if pyenv which pipx &>/dev/null; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
-    substep_info "Adding PIPX tab completion."
+    substep_info "Adding PIPX tab completion..."
     fish -c "register-python-argcomplete --shell fish pipx | ."
     PIPX_REINSTALL_COMPLETE=true
     success "Finished re-installing PIPX packages."
