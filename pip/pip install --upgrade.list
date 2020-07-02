@@ -1,0 +1,5 @@
+pip
+setuptools
+pipx
+virtualfish
+wheel
