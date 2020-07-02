@@ -27,7 +27,7 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     success "Finished installing $1 packages."
 done
 
-if [ pyenv which pipx ] &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
+if [ pyenv which pipx ] &>/dev/null; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
     success "Finished re-installing PIPX packages."
