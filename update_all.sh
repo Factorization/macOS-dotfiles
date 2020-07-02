@@ -14,7 +14,7 @@ success "Finished updating fisher."
 info "Updated brew apps..."
 substep_info "Updating..."
 brew update
-substep_info "Upgrading..."
+substep_info "Brew upgrading..."
 brew upgrade
 substep_info "Cask upgrading..."
 brew cask upgrade
