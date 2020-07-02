@@ -12,6 +12,7 @@ info "Setting up Visual Studio Code..."
 
 substep_info "Creating Visual Studio Code directory..."
 mkdir -p "$DESTINATION"
+substep_success "Finished directory."
 
 find * -name "*.json" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"

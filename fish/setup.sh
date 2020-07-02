@@ -10,9 +10,10 @@ DESTINATION="$(realpath -m ~/.config/fish)"
 
 info "Setting up fish shell..."
 
-substep_info "Creating fish config folders..."
+substep_info "Creating fish config directories..."
 mkdir -p "$DESTINATION/functions"
 mkdir -p "$DESTINATION/completions"
+substep_success "Finished creating directories."
 
 find * -name "*.fish" -o -name "fishfile" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
