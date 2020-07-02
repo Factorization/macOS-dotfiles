@@ -7,50 +7,49 @@ if not functions -q fisher
     fish -c fisher
 end
 
-if status --is-login
-    # Setup theme
-    set -gx theme_nerd_fonts yes
-    set -gx theme_show_exit_status yes
-    #set -gx theme_color_scheme solarized-dark
 
-    # Better ls colors
-    set -gx CLICOLOR 1
-    set -gx LSCOLORS gxfxcxdxbxegedabagacad
+# Setup theme
+set -gx theme_nerd_fonts yes
+set -gx theme_show_exit_status yes
+#set -gx theme_color_scheme solarized-dark
 
-    # Don't write bytecode, Python!
-    set -gx PYTHONDONTWRITEBYTECODE 1
+# Better ls colors
+set -gx CLICOLOR 1
+set -gx LSCOLORS gxfxcxdxbxegedabagacad
 
-    # Settings for PIPENV
-    set -gx PIPENV_DEFAULT_PYTHON_VERSION 3.8.3
-    set -gx PIPENV_SHELL_FANCY 1
-    set -gx PIPENV_MAX_SUBPROCESS 32
+# Don't write bytecode, Python!
+set -gx PYTHONDONTWRITEBYTECODE 1
 
-    # Shell and Editor settings
-    set -gx EDITOR code
-    set -gx SHELL /usr/local/bin/fish
+# Settings for PIPENV
+set -gx PIPENV_DEFAULT_PYTHON_VERSION 3.8.3
+set -gx PIPENV_SHELL_FANCY 1
+set -gx PIPENV_MAX_SUBPROCESS 32
 
-    # Setup pyenv, rbenv and goenv
-    set -gx PATH $HOME/.pyenv/bin $PATH
-    source (pyenv init - | psub)
-    source (rbenv init - | psub)
-    set -gx GOENV_ROOT $HOME/.goenv
-    set -gx PATH $GOENV_ROOT/bin $PATH
-    source (goenv init - | psub)
-    set -gx PATH $GOROOT/bin $PATH
+# Shell and Editor settings
+set -gx EDITOR code
+set -gx SHELL /usr/local/bin/fish
 
-    # Setup NVM
-    # set -gx NVM_DIR "$HOME/.nvm"
-    # nvm use node > /dev/null 2>&1
+# Setup pyenv, rbenv and goenv
+set -gx PATH $HOME/.pyenv/bin $PATH
+source (pyenv init - | psub)
+source (rbenv init - | psub)
+set -gx GOENV_ROOT $HOME/.goenv
+set -gx PATH $GOENV_ROOT/bin $PATH
+source (goenv init - | psub)
+set -gx PATH $GOROOT/bin $PATH
 
-    # Homebrew path
-    set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
+# Setup NVM
+# set -gx NVM_DIR "$HOME/.nvm"
+# nvm use node > /dev/null 2>&1
 
-    # Pipx path
-    set -gx PATH $HOME/.local/bin $PATH
+# Homebrew path
+set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
 
-    # # VirtaulFish plugins
-    # set -gx VIRTUALFISH_PLUGINS "auto_activation compat_aliases"
+# Pipx path
+set -gx PATH $HOME/.local/bin $PATH
 
-end
+# # VirtaulFish plugins
+# set -gx VIRTUALFISH_PLUGINS "auto_activation compat_aliases"
+
 
 set -gx GPG_TTY (tty)
