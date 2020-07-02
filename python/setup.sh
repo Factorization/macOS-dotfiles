@@ -7,6 +7,11 @@ cd "$DIR"
 
 COMMENT=\#*
 
+
+info "Creating virtualenvs directory..."
+mkdir "$(realpath -m ~)/.virtualenvs"
+succss "Finished creating directory."
+
 PIPX_REINSTALL_COMPLETE=false
 if pyenv which pipx &>/dev/null; then
     info "Re-installing PIPX packages..."
