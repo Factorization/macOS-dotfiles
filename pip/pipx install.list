@@ -2,5 +2,6 @@ black
 flake8
 glances
 pipenv
+poetry
 pylint
 mypy
