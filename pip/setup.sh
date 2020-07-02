@@ -8,7 +8,7 @@ cd "$DIR"
 COMMENT=\#*
 
 PIPX_REINSTALL_COMPLETE=false
-if [ -x "$(command -v pipx)" ]; then
+if [ pyenv which pipx ] &>/dev/null; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
     PIPX_REINSTALL_COMPLETE=true
@@ -27,7 +27,7 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     success "Finished installing $1 packages."
 done
 
-if [ -x "$(command -v pipx)" ] && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
+if [ pyenv which pipx ] &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
     success "Finished re-installing PIPX packages."
