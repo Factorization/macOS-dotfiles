@@ -126,6 +126,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+# Set New Finder window show: Home directory
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+
 #### Others ####
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -175,20 +178,10 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" \
-	"Address Book" \
-	"Calendar" \
-	"cfprefsd" \
-	"Contacts" \
+for app in "cfprefsd" \
 	"Dock" \
 	"Finder" \
-	"Mail" \
-	"Messages" \
-	"Photos" \
-	"Safari" \
-	"SystemUIServer" \
-	"Terminal" \
-	"Transmission"; do
+	"SystemUIServer"; do
 	killall "${app}" &> /dev/null
 done
 
