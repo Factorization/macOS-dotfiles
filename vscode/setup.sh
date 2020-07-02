@@ -13,9 +13,11 @@ info "Setting up Visual Studio Code..."
 substep_info "Creating Visual Studio Code directory..."
 mkdir -p "$DESTINATION"
 
-find * -not -name "$(basename ${0})" -type f | while read fn; do
+find * -name "*.json" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+
+success "Finished setting up Visual Studio Code"
 
 find * -name "*.list" -not -wholename "*global*" | while read fn; do
     cmd="${fn%.*}"
@@ -28,5 +30,3 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     done < "$fn"
     success "Finished installing $1 packages."
 done
-
-success "Finished setting up Visual Studio Code"
