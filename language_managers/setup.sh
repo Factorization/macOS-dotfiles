@@ -5,17 +5,7 @@ cd "$DIR"
 
 . ../scripts/functions.sh
 
-SOURCE="$(realpath -m .)"
-DESTINATION="$(realpath -m ~/Library/Application\ Support/Code/User)"
-
-info "Setting up Visual Studio Code..."
-
-substep_info "Creating Visual Studio Code directory..."
-mkdir -p "$DESTINATION"
-
-find * -not -name "$(basename ${0})" -type f | while read fn; do
-    symlink "$SOURCE/$fn" "$DESTINATION/$fn"
-done
+COMMENT=\#*
 
 find * -name "*.list" -not -wholename "*global*" | while read fn; do
     cmd="${fn%.*}"
@@ -29,4 +19,14 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     success "Finished installing $1 packages."
 done
 
-success "Finished setting up Visual Studio Code"
+find * -name "*global.list" | while read fn; do
+    cmd="${fn%.*}"
+    set -- $cmd
+    info "Setting $1 global version..."
+    while read version; do
+        if [[ $version == $COMMENT ]]; then continue; fi
+        substep_info "to $version..."
+        $cmd $version
+    done < "$fn"
+    success "Finished setting $1 global version."
+done
