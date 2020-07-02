@@ -11,6 +11,7 @@ PIPX_REINSTALL_COMPLETE=false
 if pyenv which pipx &>/dev/null; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
+    substep_info "Adding PIPX tab completion."
     fish -c "register-python-argcomplete --shell fish pipx | ."
     PIPX_REINSTALL_COMPLETE=true
     success "Finished re-installing PIPX packages."
@@ -33,4 +34,10 @@ if pyenv which pipx &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
     pipx reinstall-all
     fish -c "register-python-argcomplete --shell fish pipx | ."
     success "Finished re-installing PIPX packages."
+fi
+
+if pipx list | grep poetry &>/dev/null; then
+    info "Adding Poetry tab completion..."
+    fish -c "poetry completions fish > ~/.config/fish/completions/poetry.fish"
+    success "Finished adding Poetry tab completion."
 fi
