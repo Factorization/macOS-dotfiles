@@ -10,7 +10,7 @@ COMMENT=\#*
 PIPX_REINSTALL_COMPLETE=false
 if pyenv which pipx &>/dev/null; then
     info "Re-installing PIPX packages..."
-    pipx reinstall-all
+    fish -c "pipx reinstall-all"
     substep_info "Adding PIPX tab completion..."
     fish -c "register-python-argcomplete --shell fish pipx | ."
     PIPX_REINSTALL_COMPLETE=true
@@ -24,14 +24,14 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     while read package; do
         if [[ $package == $COMMENT ]]; then continue; fi
         substep_info "Installing $package..."
-        $cmd $package
+        fish -c "$cmd $package"
     done < "$fn"
     success "Finished installing $1 packages."
 done
 
 if pyenv which pipx &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
     info "Re-installing PIPX packages..."
-    pipx reinstall-all
+    fish -c "pipx reinstall-all"
     fish -c "register-python-argcomplete --shell fish pipx | ."
     success "Finished re-installing PIPX packages."
 fi
