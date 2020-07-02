@@ -5,7 +5,7 @@ cd "$DIR"
 
 . ../scripts/functions.sh
 
-SOURCE_REPO = "https://github.com/amix/vimrc.git"
+SOURCE_REPO="https://github.com/amix/vimrc.git"
 SOURCE="$(realpath -m .)"
 DESTINATION="$(realpath -m ~/.vim_runtime)"
 
