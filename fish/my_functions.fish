@@ -54,6 +54,7 @@ complete -c cheat.sh -xa '(curl -s cheat.sh/:list)'
 
 function venv
     if ! test -d ~/.virtualenvs/(basename $PWD)
+        echo $argv
         vf new $argv (basename $PWD)
         vf connect
         python3 -m pip install --upgrade pip setuptools
