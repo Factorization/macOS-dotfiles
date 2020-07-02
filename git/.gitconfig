@@ -5,3 +5,5 @@
 	autocrlf = input
     excludesfile = ~/.gitignore_global
     editor = "code --wait"
+[alias]
+	pull = pull --ff-only
