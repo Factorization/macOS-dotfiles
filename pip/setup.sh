@@ -11,6 +11,7 @@ PIPX_REINSTALL_COMPLETE=false
 if pyenv which pipx &>/dev/null; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
+    fish -c "register-python-argcomplete --shell fish pipx | ."
     PIPX_REINSTALL_COMPLETE=true
     success "Finished re-installing PIPX packages."
 fi
@@ -30,5 +31,6 @@ done
 if pyenv which pipx &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
     info "Re-installing PIPX packages..."
     pipx reinstall-all
+    fish -c "register-python-argcomplete --shell fish pipx | ."
     success "Finished re-installing PIPX packages."
 fi
