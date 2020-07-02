@@ -71,6 +71,7 @@ cask 'vagrant-manager'              # Vagrant VM manager
 # caks 'virtualbox'                 # Oracle VirtualBox
 cask 'visual-studio-code'           # VS Code IDE
 cask 'vlc'                          # VLC media player
+cask 'vmware-fusion'                # VMware Fusion
 # cask 'webstorm'                   # JetBrains IDE
 # cask 'whatsapp'                   # Chat app
 # cask 'xquartz'                    # X windows for macOS
@@ -83,10 +84,11 @@ cask 'vlc'                          # VLC media player
 brew 'ack'                          # Grep-like tool
 brew 'awscli'                       # AWS command line
 brew 'azure-cli'                    # Azure command line
-brew 'brew-cask-completion'         # Fish completion for brew cask 
+brew 'brew-cask-completion'         # Fish completion for brew cask
 brew 'coreutils'                    # GNU File, Shell, and Text utilities
 brew 'curl'                         # URL tool to query HTTP/HTTPS sites and APIs
 brew 'dep'                          # Go dependency manager
+brew 'dockutil'                     # CLI tool to manage macOS dock
 brew 'findutils'                    # GNU find, xargs and locate apps
 brew 'fish'                         # Fish shell
 brew 'gist'                         # GitHub gist tools
