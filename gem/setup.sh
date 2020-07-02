@@ -19,3 +19,7 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     success "Finished installing $1 packages."
 done
 
+info "Updating gems..."
+gem update --system
+gem update
+success "Finished updating gems."
