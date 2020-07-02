@@ -9,8 +9,8 @@ COMMENT=\#*
 
 
 info "Creating virtualenvs directory..."
-mkdir "$(realpath -m ~)/.virtualenvs"
-succss "Finished creating directory."
+mkdir -p "$(realpath -m ~)/.virtualenvs" &>/dev/null
+success "Finished creating directory."
 
 PIPX_REINSTALL_COMPLETE=false
 if pyenv which pipx &>/dev/null; then
@@ -41,7 +41,7 @@ if pyenv which pipx &>/dev/null && [ "$PIPX_REINSTALL_COMPLETE" = false ]; then
     success "Finished re-installing PIPX packages."
 fi
 
-if pipx list | grep poetry &>/dev/null; then
+if fish -c "pipx list | grep poetry &>/dev/null"; then
     info "Adding Poetry tab completion..."
     fish -c "poetry completions fish > ~/.config/fish/completions/poetry.fish"
     success "Finished adding Poetry tab completion."
