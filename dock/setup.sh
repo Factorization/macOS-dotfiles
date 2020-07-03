@@ -11,7 +11,7 @@ DESTINATION="$(realpath -m ~/Library/Preferences)"
 info "Copying dock configuration..."
 
 find * -name "*.plist" | while read fn; do
-    symlink "$SOURCE/$fn" "$DESTINATION/$fn"
+    cp -f "$SOURCE/$fn" "$DESTINATION/$fn"
     defaults read "$DESTINATION/$fn" &>/dev/null
 done
 
