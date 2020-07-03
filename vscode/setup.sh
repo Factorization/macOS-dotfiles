@@ -18,8 +18,6 @@ find * -name "*.json" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
-success "Finished setting up Visual Studio Code"
-
 find * -name "*.list" -not -wholename "*global*" | while read fn; do
     cmd="${fn%.*}"
     set -- $cmd
@@ -31,3 +29,5 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     done < "$fn"
     success "Finished installing $1 packages."
 done
+
+success "Finished setting up Visual Studio Code"
