@@ -5,5 +5,5 @@ cd "$DIR"
 
 . scripts/functions.sh
 
-./language_managers/setup.sh
+./pyenv/setup.sh
 ./python/setup.sh
