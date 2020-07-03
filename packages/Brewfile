@@ -17,12 +17,14 @@ tap 'buo/cask-upgrade'
 # cask 'adobe-air'                  # Adobe AIR
 # cask 'adoptopenjdk'               # openJDK for macOS
 # cask 'alfred'                     # macOS hotkey and search tool. Maybe add later
+cask 'authy'                        # Authy MFA app
 # cask 'bartender'                  # macOS manage menu bar tool. Maybe add later
 # cask 'caret'                      # Markdown editor
 # cask 'daisydisk'                  # Disk usage
 # cask 'dashlane'                   # Password manager
 # cask 'discord'                    # Chat
 cask 'docker'                       # docker for macOS
+cask 'drawio'                       # Draw.io
 # cask 'electron-cash'              # Bitcoin wallet
 cask 'firefox'                      # Firefox browser
 cask 'font-hack-nerd-font'          # Fonts for terminal
@@ -56,6 +58,7 @@ cask 'microsoft-edge'               # Microsoft Edge browser
 # cask 'pgadmin4'                   # PostgreSQL GUI
 cask 'powershell'                   # PowerShell for macOS
 cask 'postman'                      # API tester
+cask 'royal-tsx'                    # Royal TSX remote Desktop and SSH client
 # cask 'slack'                      # Slack chat client
 # cask 'sourcetree'                 # Git GUI client
 cask 'spectacle'                    # macOS move and resize windows
