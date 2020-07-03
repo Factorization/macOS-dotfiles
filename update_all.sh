@@ -26,8 +26,11 @@ brew cleanup
 substep_success "Finished cleanup."
 success "Finished updating brew apps."
 
-# Python
+# Go update
+./go_update.sh
+
+# Python update
 ./python_update.sh
 
-# Ruby Gems
-./ruby/setup.sh
+# Ruby update
+./ruby_update.sh
