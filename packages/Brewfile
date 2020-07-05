@@ -4,7 +4,7 @@
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-fonts'
 tap 'buo/cask-upgrade'
-# tap 'Schniz/tap'
+tap 'Schniz/tap'
 # tap 'mongodb/brew'
 # tap 'web3j/web3j'
 # tap 'ethereum/ethereum'
@@ -95,6 +95,7 @@ brew 'dep'                          # Go dependency manager
 brew 'dockutil'                     # CLI tool to manage macOS dock
 brew 'findutils'                    # GNU find, xargs and locate apps
 brew 'fish'                         # Fish shell
+brew 'fnm'                          # Node.js version manager
 brew 'gist'                         # GitHub gist tools
 brew 'git'                          # Git version control tool
 brew 'git-open'                     # Open GitHub webpages from a terminal
