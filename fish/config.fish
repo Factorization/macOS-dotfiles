@@ -1,12 +1,12 @@
-
+# Add my functions and aliases to fish shell
 source ~/.config/fish/my_functions.fish
 
+# Install fisher (the fish package manager)
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
     curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
     fish -c fisher
 end
-
 
 # Setup theme
 set -gx theme_nerd_fonts yes
@@ -17,7 +17,7 @@ set -gx theme_show_exit_status yes
 set -gx CLICOLOR 1
 set -gx LSCOLORS gxfxcxdxbxegedabagacad
 
-# Don't write bytecode, Python!
+# Don't write bytecode for Python
 set -gx PYTHONDONTWRITEBYTECODE 1
 
 # Settings for PIPENV
@@ -29,27 +29,27 @@ set -gx PIPENV_MAX_SUBPROCESS 32
 set -gx EDITOR code
 set -gx SHELL /usr/local/bin/fish
 
-# Setup pyenv, rbenv and goenv
+# Setup pyenv
 set -gx PATH $HOME/.pyenv/bin $PATH
 source (pyenv init - | psub)
+
+# Setup rbenv
 source (rbenv init - | psub)
+
+# Setup GO and goenv
 set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
 source (goenv init - | psub)
 set -gx PATH $GOROOT/bin $PATH
 
-# Setup NVM
-# set -gx NVM_DIR "$HOME/.nvm"
-# nvm use node > /dev/null 2>&1
-
-# Homebrew path
+# Add Homebrew to path
 set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
 
-# Pipx path
+# Add Pipx to path
 set -gx PATH $HOME/.local/bin $PATH
 
-# # VirtaulFish plugins
-# set -gx VIRTUALFISH_PLUGINS "auto_activation compat_aliases"
-
+# Setup fnm (node.js version manager)
+set -gx PATH $HOME/.fnm $PATH
+fnm env --multi | source
 
 set -gx GPG_TTY (tty)
