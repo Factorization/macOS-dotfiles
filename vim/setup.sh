@@ -11,10 +11,6 @@ DESTINATION="$(realpath -m ~/.vim_runtime)"
 
 info "Setting up Vim..."
 
-# find . -name ".vim*" | while read fn; do
-#     fn=$(basename $fn)
-#     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
-# done
 substep_info "Updating ultimate vimrc..."
 git clone --depth=1 "$SOURCE_REPO" "$DESTINATION" 2>/dev/null || git -C "$DESTINATION" pull --rebase
 substep_success "Finished updating."
