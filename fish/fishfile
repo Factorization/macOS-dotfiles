@@ -10,8 +10,6 @@ oh-my-fish/plugin-cd
 oh-my-fish/plugin-grc
 # Common OSX commands from fish
 oh-my-fish/plugin-osx
-# Customize virtualfish
-oh-my-fish/plugin-virtualfish
 # Theme for fish shell
 oh-my-fish/theme-bobthefish
 # Fish shell directories tracker (use: z <partial name of directory>)
