@@ -48,6 +48,7 @@ cask 'little-snitch'                # macOS firewall tool.
 # cask 'love'                       # Lua game framework
 cask 'microsoft-edge'               # Microsoft Edge browser
 cask 'microsoft-office'             # Office for macOS
+cask 'microsoft-teams'              # Microsoft Teams for macOS
 # cask 'mongodb-compass'            # MongoDB GUI
 # cask 'mysqlworkbench'             # MySQL GUI
 # cask 'nordvpn'                    # VPN
