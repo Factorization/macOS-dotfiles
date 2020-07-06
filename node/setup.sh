@@ -14,7 +14,7 @@ find * -name "*.list" -not -wholename "*global*" | while read fn; do
     while read package; do
         if [[ $package == $COMMENT ]]; then continue; fi
         substep_info "Installing $package..."
-        $cmd $package
+        fish -c "$cmd $package"
     done < "$fn"
     success "Finished installing $1 packages."
 done
