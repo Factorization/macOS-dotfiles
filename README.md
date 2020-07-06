@@ -11,21 +11,21 @@ My dotfiles for macOS
     cat ~/.ssh/id_rsa.pub | pbcopy
     ```
 
-1. Install Homebrew and git
+1. Install Homebrew and git:
 
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     brew install git
     ```
 
-1. Clone this repository
+1. Clone this repository:
 
     ```bash
     mkdir -p ~/Projects
     git clone git@github.com:Factorization/macOS-dotfiles.git ~/Projects/dotfiles
     ```
 
-1. Ensure you are signed in to the App Store
+1. Ensure you are signed in to the App Store.
 
 1. Run the `~/Projects/dotfiles/bootstrap.sh` script.
 
