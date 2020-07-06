@@ -12,7 +12,7 @@ info "Copying terminal configuration..."
 
 find * -name "*.plist" | while read fn; do
     substep_info "Copying terminal preference list..."
-    symlink "$SOURCE/$fn" "$DESTINATION/$fn"
+    cp -f "$SOURCE/$fn" "$DESTINATION/$fn"
     substep_info "Note: Terminal will need to be restarted to take effect."
 done
 
