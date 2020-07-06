@@ -56,7 +56,7 @@ I strongly recommend you fork this repository and customize it to fit your need.
 ## Dock (dock/) - macOS Dock config
 
 - `setup.sh` - Copies the `com.apple.dock.plist` to `~/Library/Preferences`. This setups up the configuration for the Dock.
-    > **_NOTE_** Some apps will show up as question marks (`?`), this either means the app or the location to the app doesn't exist. You can try right-clicking the icon and selecting **Options > Show in Finder**.
+    > **_NOTE_** - Some apps will show up as question marks (`?`), this either means the app or the location to the app doesn't exist. You can try right-clicking the icon and selecting **Options > Show in Finder**.
 
 - `com.apple.dock.plist` - Binary file that contains all of the Dock configuration. To read the file run:
 
@@ -90,11 +90,11 @@ I strongly recommend you fork this repository and customize it to fit your need.
 
 - `goenv install --skip-existing.list` - The list of go versions to install.
 
-## Iterm2 (iterm2/) - Terminal tool for macOS
+## iTerm2 (iterm2/) - Terminal tool for macOS
 
 - `setup.sh` - Symlinks the plist file to `~/.config/iterm2`. Then configures iterm2 to use this directory for its configuration.
 
-- `com.googlecode.iterm2.plist` - My iterm2 configuration.
+- `com.googlecode.iterm2.plist` - My iterm2 configuration file.
 
 ## macOS (macos/) - macOS configuration
 
@@ -102,66 +102,70 @@ I strongly recommend you fork this repository and customize it to fit your need.
 
 ## Node (node/) - Node.js
 
-- `setup.sh` -
+- `setup.sh` - Installs the node versions listed in the fnm install file. Then sets the version to use to the version listed in the fnm use file. Lastly, it installs the npm pages globally listed in the npm install file.
 
-- `nvm install.list` -
+- `fnm install.list` - The list of node versions to install.
+
+- `fnm use.list` -
+
+- `nvm install.list` - The list of npm packages to install.
 
 ## Packages (packages/) - Brew apps to install
 
-- `setup.sh` -
+- `setup.sh` - Installs the brew applications listed in the brewfile.
 
-- `Brewfile` -
+- `Brewfile` - The curated list of applications to install. It includes brew apps, brew cask apps and mac app store apps.
 
 ## Pyenv (pyenv/) - Version manager for Python
 
-- `setup.sh` -
+- `setup.sh` - Installs the python versions listed in the pyenv install file. Then sets the global python version to the version listed in the pyenv global file.
 
-- `pyenv global.list` -
+- `pyenv global.list` - The python version that will be set as the global version.
 
-- `pyenv install --skip-existing.list` -
+- `pyenv install --skip-existing.list` - The list of python versions to install.
 
 ## Python (python/) - Pip and Pipx scripts
 
-- `setup.sh` -
+- `setup.sh` - Creates the directory for all virtual environments. Installs the python pip packages listed in the pip install file. Installs the python pipx packages listed in the pipx install file. Re-installs all the pipx packages incase a new version of python has been configured. Sets up virtual fish (a python virtual environment tool for the fish shell). Adds pipx and poetry tab completion to fish shell.
 
-- `pip install --upgrade.list` -
+- `pip install --upgrade.list` - The list of pip packages to install.
 
-- `pipx install.list` -
+- `pipx install.list` - The list of pipx packages to install. Pipx is a tool to run python pip packages that have standalone applications.
 
-- `vf install.list` -
+- `vf install.list` - The commands for virtual fish install and plugins to configure. Virtual fish is a python virtual environment manager for fish shell.
 
 ## Rbenv (rbenv/) - Version manager for Ruby
 
-- `setup.sh` -
+- `setup.sh` - Installs the ruby versions listed in the rbenv install file. Then sets the global ruby version to the version listed in the rbenv global file.
 
-- `rbenv global.list` -
+- `rbenv global.list` - The ruby version that will be set as the global version.
 
-- `rbenv install --skip-existing.list` -
+- `rbenv install --skip-existing.list` - The list of ruby versions to install.
 
 ## Ruby (ruby/) - Gem install
 
-- `setup.sh` -
+- `setup.sh` - Installs the ruby gems listed in the gem install file. Also, runs update gems.
 
-- `gem install.list` -
+- `gem install.list` - The list of ruby gems to install.
 
-## Scripts (scripts/) - Helper functions for setup.sh scripts
+## Scripts (scripts/) - Helper functions for `setup.sh` scripts
 
-- `functions.sh` -
+- `functions.sh` - Helper functions for the various shell scripts in this repo.
 
 ## Terminal (terminal/) - macOS Terminal configuration
 
-- `setup.sh` -
+- `setup.sh` - Copies the `com.apple.Terminal.plist` preference file to `~/Library/preferences/`.
 
-- `com.apple.Terminal.plist` -
+- `com.apple.Terminal.plist` - The terminal preferences to use.
 
 ## Vim (vim/) - VIM configuration
 
-- `setup.sh` -
+- `setup.sh` - Installs and configures the ultimate VIM config.
 
-## Vscode (vscode/) - Microsoft VScode configuration
+## VS Code (vscode/) - Microsoft Visual Studio Code configuration
 
-- `setup.sh` -
+- `setup.sh` - Symlinks the vscode json config file. Then installs the list of vs code extensions.
 
-- `code --install-extension.list` -
+- `code --install-extension.list` - The list of vs code extensions to install.
 
-- `settings.json` -
+- `settings.json` - My vs code configuration file.
