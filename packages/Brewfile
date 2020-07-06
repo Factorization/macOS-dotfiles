@@ -73,7 +73,7 @@ cask 'teamviewer'                   # TeamViewer client
 # cask 'unity'                      # Graphics design
 cask 'vagrant'                      # HashiCorp dev environment manager
 cask 'vagrant-manager'              # Vagrant VM manager
-# caks 'virtualbox'                 # Oracle VirtualBox
+caks 'virtualbox'                   # Oracle VirtualBox
 cask 'visual-studio-code'           # VS Code IDE
 cask 'vlc'                          # VLC media player
 cask 'vmware-fusion'                # VMware Fusion
