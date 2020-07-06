@@ -34,3 +34,6 @@ success "Finished updating brew apps."
 
 # Ruby update
 ./ruby_update.sh
+
+# Node update
+./node_update.sh
