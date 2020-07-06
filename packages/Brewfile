@@ -3,6 +3,7 @@
 ##########################
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-drivers'
 tap 'buo/cask-upgrade'
 tap 'Schniz/tap'
 # tap 'mongodb/brew'
@@ -45,6 +46,7 @@ cask 'keybase'                      # Tool for encrypted messaging and file shar
 # cask 'kitematic'                  # Docker GUI tool
 cask 'lastpass'                     # LastPass password manager
 cask 'little-snitch'                # macOS firewall tool.
+cask 'logitech-options'             # Logitech options software
 # cask 'love'                       # Lua game framework
 cask 'microsoft-edge'               # Microsoft Edge browser
 cask 'microsoft-office'             # Office for macOS
@@ -65,6 +67,7 @@ cask 'royal-tsx'                    # Royal TSX remote Desktop and SSH client
 cask 'spectacle'                    # macOS move and resize windows
 # cask 'spotify'                    # Spotify thick client
 # cask 'steam'                      # Steam game client
+cask 'steelseries-engine'           # Steelseries headset software
 cask 'suspicious-package'           # macOS package inspector tool
 cask 'teamviewer'                   # TeamViewer client
 # cask 'telegram'                   # Telegram chat client
