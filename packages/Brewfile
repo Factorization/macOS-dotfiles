@@ -47,7 +47,7 @@ cask 'lastpass'                     # LastPass password manager
 cask 'little-snitch'                # macOS firewall tool.
 # cask 'love'                       # Lua game framework
 cask 'microsoft-edge'               # Microsoft Edge browser
-# cask 'microsoft-office'           # Office for macOS
+cask 'microsoft-office'             # Office for macOS
 # cask 'mongodb-compass'            # MongoDB GUI
 # cask 'mysqlworkbench'             # MySQL GUI
 # cask 'nordvpn'                    # VPN
@@ -140,12 +140,8 @@ brew 'youtube-dl'                   # Download YouTube videos
 mas 'Amphetamine', id: 937984704
 mas 'FruitJuice', id: 671736912
 mas 'Keynote', id: 409183694
-mas 'Microsoft Excel', id: 462058435
 mas 'Microsoft OneNote', id: 784801555
-mas 'Microsoft Outlook', id: 985367838
-mas 'Microsoft PowerPoint', id: 462062816
 mas 'Microsoft Remote Desktop', id: 1295203466
-mas 'Microsoft Word', id: 462054704
 mas 'Numbers', id: 409203825
 mas 'OneDrive', id: 823766827
 mas 'Pages', id: 409201541
@@ -154,4 +150,4 @@ mas 'Slack', id: 803453959
 mas 'Strongbox', id: 1270075435
 mas 'Trello', id: 1278508951
 mas 'WiFi Explorer Lite', id: 1408727408
-mas 'Xcode', id: 497799835
+# mas 'Xcode', id: 497799835
