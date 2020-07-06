@@ -31,4 +31,4 @@ done
 
 ./update_all.sh
 
-success "Finished installing Dotfiles"
+success "Finished installing Dotfiles. Reboot needed!"
