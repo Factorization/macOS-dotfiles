@@ -139,11 +139,8 @@ brew 'youtube-dl'                   # Download YouTube videos
 ##########################
 mas 'Amphetamine', id: 937984704
 mas 'FruitJuice', id: 671736912
-mas 'Keynote', id: 409183694
-mas 'Microsoft OneNote', id: 784801555
 mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Numbers', id: 409203825
-mas 'OneDrive', id: 823766827
 mas 'Pages', id: 409201541
 mas 'Skitch', id: 425955336
 mas 'Slack', id: 803453959
