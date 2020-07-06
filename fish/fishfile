@@ -1,26 +1,18 @@
 # Run bash commands in fish shell (bass <command>)
 edc/bass
-
 # Notifications when long running processes finish (needs terminal-notifier)
 franciscolourenco/done
-
 # Paired symbols in fish shell
 laughedelic/pisces
-
 # CD commands in fish shell (like cd - and cd ...)
 oh-my-fish/plugin-cd
-
 # Colorize Fish command output (needs grc)
 oh-my-fish/plugin-grc
-
 # Common OSX commands from fish
 oh-my-fish/plugin-osx
-
 # Customize virtualfish
 oh-my-fish/plugin-virtualfish
-
 # Theme for fish shell
 oh-my-fish/theme-bobthefish
-
 # Fish shell directories tracker (use: z <partial name of directory>)
 jethrokuan/z
