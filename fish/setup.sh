@@ -13,10 +13,14 @@ info "Setting up fish shell..."
 substep_info "Creating fish config directories..."
 mkdir -p "$DESTINATION/functions"
 mkdir -p "$DESTINATION/completions"
+mkdir -p "$DESTINATION/conf.d"
 substep_success "Finished creating directories."
 
-find * -name "*.fish" -o -name "fishfile" | while read fn; do
+find * -name "*.fish" -o -name "fishfile" -not -wholename "000-env.fish" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
+done
+find * -name "000-env.fish" | while read fn; do
+    symlink "$SOURCE/$fn" "$DESTINATION/conf.d/$fn"
 done
 clear_broken_symlinks "$DESTINATION"
 

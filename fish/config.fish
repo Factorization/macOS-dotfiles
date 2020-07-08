@@ -46,7 +46,7 @@ set -gx PATH $GOROOT/bin $PATH
 set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 # Add Pipx to path
-set -gx PATH $HOME/.local/bin $PATH
+# set -gx PATH $HOME/.local/bin $PATH
 
 # Setup fnm (node.js version manager)
 set -gx PATH $HOME/.fnm $PATH
