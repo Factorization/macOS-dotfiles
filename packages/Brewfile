@@ -17,9 +17,9 @@ tap 'Schniz/tap'
 # cask 'adobe-acrobat-reader'       # Adobe reader
 # cask 'adobe-air'                  # Adobe AIR
 # cask 'adoptopenjdk'               # openJDK for macOS
-# cask 'alfred'                     # macOS hotkey and search tool. Maybe add later
+cask 'alfred'                       # macOS hotkey and search tool. Maybe add later
 cask 'authy'                        # Authy MFA app
-# cask 'bartender'                  # macOS manage menu bar tool. Maybe add later
+cask 'bartender'                    # macOS manage menu bar tool. Maybe add later
 # cask 'caret'                      # Markdown editor
 # cask 'daisydisk'                  # Disk usage
 # cask 'dashlane'                   # Password manager
