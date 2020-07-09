@@ -52,6 +52,11 @@ function cheat.sh
 end
 complete -c cheat.sh -xa '(curl -s cheat.sh/:list)'
 
+function gi
+	curl -sL https://www.toptal.com/developers/gitignore/api/$argv
+end
+complete -c gi -xa '(curl -s https://www.toptal.com/developers/gitignore/api/list | string split ,)'
+
 function venv
     if ! test -d ~/.virtualenvs/(basename $PWD)
         vf new $argv (basename $PWD)
