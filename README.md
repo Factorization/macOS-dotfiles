@@ -35,7 +35,11 @@ I strongly recommend you fork this repository and customize it to fit your need.
 
 ## Git
 
-- The .gitconfig file includes my `[user]` config. Make sure to replace with your own username and email
+- The `.gitconfig` file includes my `[user]` config. Make sure to replace with your own username and email
+
+## Packages
+
+- The `Brewfile` contains applications that may require a license to run.
 
 # Contents
 
