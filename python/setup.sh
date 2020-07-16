@@ -22,6 +22,12 @@ if pyenv which pipx &>/dev/null; then
     success "Finished re-installing PIPX packages."
 fi
 
+if pyenv which vf &>/dev/null; then
+    info "Uninstalling VirtualFish..."
+    fish -c "vf uninstall &>/dev/null"
+    success "Finished uninstalling VirtualFish."
+fi
+
 find * -name "*.list" -not -wholename "*global*" | while read fn; do
     cmd="${fn%.*}"
     set -- $cmd
