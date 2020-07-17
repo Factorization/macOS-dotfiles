@@ -47,6 +47,7 @@ cask 'keybase'                      # Tool for encrypted messaging and file shar
 cask 'lastpass'                     # LastPass password manager
 cask 'little-snitch'                # macOS firewall tool.
 cask 'logitech-options'             # Logitech options software
+cask 'logitech-camera-settings'     # Logitech camera software
 # cask 'love'                       # Lua game framework
 cask 'microsoft-edge'               # Microsoft Edge browser
 cask 'microsoft-office'             # Office for macOS
