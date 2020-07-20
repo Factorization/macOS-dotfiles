@@ -32,5 +32,6 @@
     "python.linting.pylintPath": "~/.local/bin/pylint",
     "python.formatting.blackPath": "~/.local/bin/black",
     "editor.formatOnSave": true,
-    "python.pythonPath": "~/.pyenv/shims/python"
+    "python.pythonPath": "~/.pyenv/shims/python",
+    "python.languageServer": "Pylance"
 }
