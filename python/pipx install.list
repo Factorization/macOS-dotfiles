@@ -1,7 +1,8 @@
 black
+coookiecutter
 flake8
 glances
+mypy
 pipenv
 poetry
 pylint
-mypy
