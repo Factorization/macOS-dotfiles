@@ -52,4 +52,10 @@ set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -gx PATH $HOME/.fnm $PATH
 fnm env --multi | source
 
+# Lastpass timeout
+set -gx LPASS_AGENT_TIMEOUT 28800
+
+# Django load .env variables
+set -gx DJANGO_READ_DOT_ENV_FILE True
+
 set -gx GPG_TTY (tty)
