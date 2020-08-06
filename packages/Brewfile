@@ -95,6 +95,7 @@ brew 'awscli'                       # AWS command line
 brew 'azure-cli'                    # Azure command line
 brew 'brew-cask-completion'         # Fish completion for brew cask
 brew 'coreutils'                    # GNU File, Shell, and Text utilities
+brew 'cloc'                         # Tool to count lines of code
 brew 'curl'                         # URL tool to query HTTP/HTTPS sites and APIs
 brew 'dep'                          # Go dependency manager
 brew 'dockutil'                     # CLI tool to manage macOS dock
@@ -118,8 +119,6 @@ brew 'lastpass-cli'                 # LastPass password manager CLI tool
 brew 'mas'                          # Mac App Store command-line tool
 brew 'minikube'                     # Run a kubernetes cluster locally
 brew 'nmap'                         # NMAP command line tool
-# brew 'node'                       # Nodejs
-# brew 'nvm'                        # Manage multiple Node.js versions
 brew 'openssl'                      # OpenSSL
 brew 'packer'                       # Creates system images
 brew 'pandoc'                       # Universal document converter
@@ -153,4 +152,3 @@ mas 'Slack', id: 803453959
 mas 'Strongbox', id: 1270075435
 mas 'Trello', id: 1278508951
 mas 'WiFi Explorer Lite', id: 1408727408
-# mas 'Xcode', id: 497799835
