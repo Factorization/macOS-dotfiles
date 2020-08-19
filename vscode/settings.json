@@ -1,5 +1,5 @@
 {
-    "editor.rulers": [79],
+    "editor.rulers": [120],
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "python.linting.enabled": true,
     "files.autoSave": "afterDelay",
