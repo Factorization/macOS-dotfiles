@@ -39,14 +39,13 @@ source (rbenv init - | psub)
 # Setup GO and goenv
 set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
-source (goenv init - | psub)
+if functions -q goenv
+    source (goenv init - | psub)
+end
 set -gx PATH $GOROOT/bin $PATH
 
 # Add Homebrew to path
 set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
-
-# Add Pipx to path
-# set -gx PATH $HOME/.local/bin $PATH
 
 # Setup fnm (node.js version manager)
 set -gx PATH $HOME/.fnm $PATH
