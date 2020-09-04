@@ -2,6 +2,7 @@ black
 cookiecutter
 flake8
 glances
+ipython
 mypy
 pipenv
 poetry
