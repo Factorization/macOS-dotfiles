@@ -5,7 +5,14 @@ cd "$DIR"
 
 . ../scripts/functions.sh
 
+SOURCE_REPO="https://github.com/syndbg/goenv.git"
+
+DESTINATION="$(realpath -m ~/.goenv)"
 COMMENT=\#*
+
+substep_info "Updating goenv..."
+git clone "$SOURCE_REPO" "$DESTINATION" 2>/dev/null || git -C "$DESTINATION" pull
+substep_success "Finished updating."
 
 find * -name "*.list" -not -wholename "*global*" | while read fn; do
     cmd="${fn%.*}"
