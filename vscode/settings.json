@@ -32,6 +32,8 @@
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external",
     "python.linting.banditPath": "~/.local/bin/bandit",
     "python.linting.flake8Path": "~/.local/bin/flake8",
     "python.linting.mypyPath": "~/.local/bin/mypy",
