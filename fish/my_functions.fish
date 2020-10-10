@@ -64,5 +64,7 @@ function venv
             vf connect
             python3 -m pip install --upgrade pip setuptools
         end
+    else
+        vf activate (basename $PWD)
     end
 end
