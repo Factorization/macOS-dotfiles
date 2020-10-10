@@ -1,6 +1,10 @@
 {
-    "editor.rulers": [120],
+    "editor.rulers": [
+        120
+    ],
     "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.rendererType": "dom",
     "python.linting.enabled": true,
     "files.autoSave": "afterDelay",
     "git.autofetch": true,
