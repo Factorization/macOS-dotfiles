@@ -19,7 +19,7 @@ substep_info "Brew upgrading..."
 brew upgrade
 substep_success "Finished upgrading."
 substep_info "Cask upgrading..."
-brew cask upgrade
+brew upgrade --cask
 substep_success "Finished upgrading."
 substep_info "Cleanup..."
 brew cleanup
