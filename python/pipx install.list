@@ -1,6 +1,7 @@
 bandit
 black
 cookiecutter
+devpi-client
 flake8
 glances
 ipython
