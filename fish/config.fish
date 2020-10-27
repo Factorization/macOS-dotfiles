@@ -49,7 +49,7 @@ set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 # Setup fnm (node.js version manager)
 set -gx PATH $HOME/.fnm $PATH
-fnm env --multi | source
+fnm env | source
 
 # Lastpass timeout
 set -gx LPASS_AGENT_TIMEOUT 28800
