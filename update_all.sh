@@ -5,6 +5,15 @@ cd "$DIR"
 
 . scripts/functions.sh
 
+# Ensure sudo
+info "Prompting for sudo password..."
+if sudo -v; then
+    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+    success "Sudo credentials updated."
+else
+    error "Failed to obtain sudo credentials."
+fi
+
 # Update fish shell plugins
 info "Updating fisher (fish package manager)..."
 fish -c fisher
