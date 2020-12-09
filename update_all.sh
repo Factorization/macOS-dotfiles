@@ -20,14 +20,14 @@ fish -c fisher
 success "Finished updating fisher."
 
 # Update homebrew
-info "Updated brew apps..."
-substep_info "Updating..."
+info "Updating brew apps..."
+substep_info "Brew update..."
 brew update
 substep_success "Finished updating."
-substep_info "Brew upgrading..."
+substep_info "Brew upgrade..."
 brew upgrade
 substep_success "Finished upgrading."
-substep_info "Cask upgrading..."
+substep_info "Cask upgrade..."
 brew upgrade --cask
 substep_success "Finished upgrading."
 substep_info "Cleanup..."
