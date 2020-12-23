@@ -122,9 +122,9 @@ brew 'nmap'                         # NMAP command line tool
 brew 'openssl'                      # OpenSSL
 brew 'packer'                       # Creates system images
 brew 'pandoc'                       # Universal document converter
-brew 'pyenv'                        # Python version manager
+# brew 'pyenv'                      # Python version manager
 brew 'python'                       # Python 3.7
-brew 'python@3.8'                   # Python 3.8
+# brew 'python@3.8'                 # Python 3.8
 brew 'rbenv'                        # Ruby version manager
 brew 'ruby'                         # Ruby
 brew 'sqlite'                       # CLI for SQLite
