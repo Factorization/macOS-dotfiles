@@ -31,15 +31,19 @@ set -gx SHELL /usr/local/bin/fish
 
 # Setup pyenv
 set -gx PATH $HOME/.pyenv/bin $PATH
-source (pyenv init - | psub)
+if type -q pyenv
+    source (pyenv init - | psub)
+end
 
 # Setup rbenv
-source (rbenv init - | psub)
+if type -q rbenv
+    source (rbenv init - | psub)
+end
 
 # Setup GO and goenv
 set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
-if functions -q goenv
+if type -q goenv
     source (goenv init - | psub)
 end
 set -gx PATH $GOROOT/bin $PATH
