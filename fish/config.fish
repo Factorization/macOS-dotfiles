@@ -62,3 +62,7 @@ set -gx LPASS_AGENT_TIMEOUT 28800
 set -gx DJANGO_READ_DOT_ENV_FILE True
 
 set -gx GPG_TTY (tty)
+
+# Needed for MacPorts
+set -gx PATH /opt/local/bin $PATH
+set -gx PATH /opt/local/sbin $PATH
