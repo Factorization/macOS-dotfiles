@@ -41,5 +41,6 @@
     "python.formatting.blackPath": "~/.local/bin/black",
     "editor.formatOnSave": true,
     "python.pythonPath": "~/.pyenv/shims/python",
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+    "window.zoomLevel": 0
 }
