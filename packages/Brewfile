@@ -42,7 +42,7 @@ cask 'iterm2'                       # macOS terminal
 cask 'jetbrains-toolbox'            # JetBrains toolbox app for installing JetBrain IDEs
 # cask 'karabiner-elements'         # Keyboard customize for macOS.
 # cask 'keepassx'                   # macOS KeePass tool. Using strongbox instead
-cask 'keybase'                      # Tool for encrypted messaging and file sharing
+# cask 'keybase'                    # Tool for encrypted messaging and file sharing
 # cask 'kitematic'                  # Docker GUI tool
 cask 'lastpass'                     # LastPass password manager
 cask 'little-snitch'                # macOS firewall tool.
