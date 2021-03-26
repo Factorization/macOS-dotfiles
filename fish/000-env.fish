@@ -2,6 +2,10 @@
 # Fish doesn't source config.fish until the end, so needed environment variables
 # for various plugins will not work if they are only in config.fish
 
+# Add Homebrew to path
+set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -gx fish_user_paths "/opt/homebrew/bin" $fish_user_paths
+
 # Addes pipx and fish plugins
 set -x PATH $HOME/.local/bin $PATH
 

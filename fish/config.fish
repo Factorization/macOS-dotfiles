@@ -48,12 +48,11 @@ if type -q goenv
 end
 set -gx PATH $GOROOT/bin $PATH
 
-# Add Homebrew to path
-set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
-
 # Setup fnm (node.js version manager)
 set -gx PATH $HOME/.fnm $PATH
-fnm env | source
+if type -q fnm
+    fnm env | source
+end
 
 # Lastpass timeout
 set -gx LPASS_AGENT_TIMEOUT 28800
