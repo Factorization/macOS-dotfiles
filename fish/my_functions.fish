@@ -71,4 +71,4 @@ function venv
 end
 
 # TEMPORARY WORK AROUND FOR FISH SLOWNESS WITH BIG SUR AND FISH VERSION 3.1.2 - 1/6/2021 (Should be able to remove after next fish update)
-function __fish_describe_command; end
+# function __fish_describe_command; end
