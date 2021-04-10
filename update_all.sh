@@ -16,7 +16,7 @@ fi
 
 # Update fish shell plugins
 info "Updating fisher (fish package manager)..."
-fish -c fisher
+fish -c "fisher update"
 success "Finished updating fisher."
 
 # Update homebrew

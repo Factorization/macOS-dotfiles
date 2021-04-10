@@ -4,8 +4,6 @@ edc/bass
 franciscolourenco/done
 # Paired symbols in fish shell
 laughedelic/pisces
-# CD commands in fish shell (like cd - and cd ...)
-oh-my-fish/plugin-cd
 # Colorize Fish command output (needs grc)
 oh-my-fish/plugin-grc
 # Common OSX commands from fish

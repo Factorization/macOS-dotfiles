@@ -16,7 +16,7 @@ mkdir -p "$DESTINATION/completions"
 mkdir -p "$DESTINATION/conf.d"
 substep_success "Finished creating directories."
 
-find * -name "*.fish" -not -name "000-env.fish" -o -name "fishfile" | while read fn; do
+find * -name "*.fish" -not -name "000-env.fish" -o -name "fishfile" -o -name "fish_plugins" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 find * -name "000-env.fish" | while read fn; do
