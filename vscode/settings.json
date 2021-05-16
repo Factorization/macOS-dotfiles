@@ -49,5 +49,6 @@
             "filenamePattern": "*.ipynb"
         }
     ],
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "go.toolsManagement.autoUpdate": true
 }
