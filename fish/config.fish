@@ -30,9 +30,8 @@ set -gx EDITOR code
 set -gx SHELL /usr/local/bin/fish
 
 # Setup pyenv
-set -gx PATH $HOME/.pyenv/bin $PATH
 if type -q pyenv
-    source (pyenv init - | psub)
+    status is-login; and pyenv init --path | source
 end
 
 # Setup rbenv

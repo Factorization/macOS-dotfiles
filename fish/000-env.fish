@@ -7,7 +7,11 @@ set -gx fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -gx fish_user_paths "/opt/homebrew/bin" $fish_user_paths
 set -gx fish_user_paths "/opt/homebrew/sbin" $fish_user_paths
 
-# Addes pipx and fish plugins
+# add pyenv to path
+set -gx PYENV_ROOT $HOME/.pyenv
+set -gx fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+
+# Addes pipx
 set -x PATH $HOME/.local/bin $PATH
 
 # Setup plugins for virtual fish
