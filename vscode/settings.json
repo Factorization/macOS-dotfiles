@@ -43,12 +43,9 @@
     "editor.formatOnSave": true,
     "python.pythonPath": "~/.pyenv/shims/python",
     "python.languageServer": "Pylance",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "window.zoomLevel": 0,
     "go.toolsManagement.autoUpdate": true
 }
